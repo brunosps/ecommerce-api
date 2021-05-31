@@ -168,7 +168,8 @@ DEPENDENCIES
   annotate
   bootsnap (>= 1.4.4)
   byebug
-  devise_token_auth
+  devise (~> 4.7, >= 4.7.2)
+  devise_token_auth (~> 1.1, >= 1.1.4)
   listen (~> 3.3)
   pg (~> 1.1)
   puma (~> 5.0)
