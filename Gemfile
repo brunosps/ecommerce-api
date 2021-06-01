@@ -11,6 +11,7 @@ gem "puma", "~> 5.0"
 
 gem "devise", "~> 4.7", ">= 4.7.2"
 gem "devise_token_auth", "~> 1.1", ">= 1.1.4"
+gem "rack-cors", "~> 1.1.1"
 
 group :development, :test do
     gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
