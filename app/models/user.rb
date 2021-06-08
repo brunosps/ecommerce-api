@@ -12,7 +12,7 @@
 #  email                  :string
 #  encrypted_password     :string           default(""), not null
 #  name                   :string
-#  profile                :integer          default(1)
+#  profile                :integer          default("client")
 #  provider               :string           default("email"), not null
 #  remember_created_at    :datetime
 #  reset_password_sent_at :datetime
