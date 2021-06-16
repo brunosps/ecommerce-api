@@ -13,18 +13,21 @@ gem "devise", "~> 4.7", ">= 4.7.2"
 gem "devise_token_auth", "~> 1.1", ">= 1.1.4"
 gem "rack-cors", "~> 1.1.1"
 
+# Rendering
+gem "jbuilder", "~> 2.10.1"
+
 group :development, :test do
-    gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
-    gem "factory_bot_rails"
-    gem "faker"
-    gem "rspec-rails", "~> 4.0.1"
-    gem "shoulda-matchers", "~> 4.0"
+  gem "byebug", platforms: [:mri, :mingw, :x64_mingw]
+  gem "factory_bot_rails"
+  gem "faker"
+  gem "rspec-rails", "~> 4.0.1"
+  gem "shoulda-matchers", "~> 4.0"
 end
 
 group :development do
-    gem "annotate"
-    gem "listen", "~> 3.3"
-    gem "spring"
+  gem "annotate"
+  gem "listen", "~> 3.3"
+  gem "spring"
 end
 
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
