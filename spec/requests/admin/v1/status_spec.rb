@@ -6,7 +6,7 @@ describe "Status", type: :request do
   it "tests status" do
     get "/admin/v1/status", headers: auth_header(user)
     expect(body_json).to include("online" => true)
-    expect(body_json).to include("time" => Time.zone.now.round)
+    expect(body_json).to have_key("time")
     expect(response).to have_http_status(:ok)
   end
 end
