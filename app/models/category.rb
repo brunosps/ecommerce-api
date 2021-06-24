@@ -12,4 +12,6 @@ class Category < ApplicationRecord
   has_many :products, through: :product_categories
 
   validates :name, presence: true, uniqueness: { case_sensitive: false }
+
+  include NameSearchable
 end
