@@ -21,4 +21,7 @@ class SystemRequirement < ApplicationRecord
   validates :processor, presence: true
   validates :memory, presence: true
   validates :video_board, presence: true
+
+  include NameSearchable
+  include Paginatable
 end
