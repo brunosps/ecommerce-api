@@ -22,6 +22,9 @@ group :development, :test do
   gem "faker"
   gem "rspec-rails", "~> 4.0.1"
   gem "shoulda-matchers", "~> 4.0"
+  gem "simplecov", require: false
+  gem "rexml", "~> 3.2.4"
+  gem "rubycritic", require: false
 end
 
 group :development do

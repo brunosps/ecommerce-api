@@ -11,6 +11,10 @@ RUN echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
 RUN locale-gen
 RUN export LC_ALL="en_US.utf8"
 
+ENV LC_ALL=C.UTF-8
+ENV LANG=en_US.UTF-8
+ENV LANGUAGE=en_US.UTF-8
+
 WORKDIR $INSTALL_PATH
 
 COPY Gemfile Gemfile
