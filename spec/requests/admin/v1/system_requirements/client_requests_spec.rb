@@ -1,4 +1,4 @@
-require "rails_helper"
+require 'rails_helper'
 
 RSpec.describe "Admin V1 System Requirements as :client", type: :request do
   let(:user) { create(:user, profile: :client) }
@@ -6,7 +6,7 @@ RSpec.describe "Admin V1 System Requirements as :client", type: :request do
   context "GET /system_requirements" do
     let(:url) { "/admin/v1/system_requirements" }
     let!(:system_requirements) { create_list(:system_requirement, 5) }
-
+    
     before(:each) { get url, headers: auth_header(user) }
 
     include_examples "forbidden access"
@@ -14,7 +14,7 @@ RSpec.describe "Admin V1 System Requirements as :client", type: :request do
 
   context "POST /system_requirements" do
     let(:url) { "/admin/v1/system_requirements" }
-
+    
     before(:each) { post url, headers: auth_header(user) }
 
     include_examples "forbidden access"
